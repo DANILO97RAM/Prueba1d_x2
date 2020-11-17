@@ -115,9 +115,9 @@ def train(g_model, d_model, gan_model, latent_dim, n_epochs=10000, n_batch=128, 
 		# evaluate the model every n_eval epochs
 		if (i+1) % n_eval == 0:
 			summarize_performance(i, g_model, d_model, latent_dim)
-	 
+
 # size of the latent space
-latent_dim = 3
+latent_dim = 5
 # create the discriminator
 discriminator = define_discriminator()
 # create the generator
